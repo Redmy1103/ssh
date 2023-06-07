@@ -1,0 +1,22 @@
+.flex-container {
+    display: flex;
+    gap: 32px;
+    flex-wrap: nowrap;
+}
+
+.flex-item {
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+@media screen and (max-width:600px){
+    .flex-container{
+        flex-direction:column;
+        
+    }
+.flex-item{
+    background-color: aquamarine;
+    border-top: 100%;
+    width:100%}
+
+}

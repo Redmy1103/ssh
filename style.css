@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    /** フォントの指定 */
+    font-family: 'Noto Sans JP', sans-serif;
+    /** 文字サイズの指定 */
+    font-size: 16px;
+    /** 背景色の指定 */
+    background: #101c30;
+    /** 文字色の指定 */
+    color: #fafafa;
+
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 8px;
+}
+
+
+h1#page-title {
+
+    border-bottom: 1px solid #fafafa;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+/** sectionタグの最初の要素（:first-of-type）ではない（:not）要素にスタイルを適用する（発展なので研修では触れません！調べてみて） */
+section:not(:first-of-type) {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #fafafa;
+}
+
+.sub-text {
+    color: #d9d9d9;
+}
+
+#profile-column img,
+#profile-column div {
+    display: inline-block;
+}
+
+#profile-image {
+    width: 200px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 200px;
+    padding: 24px;
+    margin-top: 24px;
+    background: #142d5a;
+}
+
+.footer-img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 560px) {
+    #profile-image {
+        width: 100%;
+    }
+}
